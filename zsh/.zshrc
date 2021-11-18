@@ -113,6 +113,9 @@ source $ZSH/oh-my-zsh.sh
 
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
+# NVIM as default editor
+export EDITOR=nvim;
+
 # alias
 alias vim="nvim"
 alias cl="clear"
