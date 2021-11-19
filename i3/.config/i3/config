@@ -197,4 +197,11 @@ bindsym $mod+b exec firefox
 bindsym $mod+o exec flatpak run md.obsidian.Obsidian
 
 # start window manager 
-bindsym $mod+f exec nautilux --no-desktop --new-window 
+bindsym $mod+f exec nautilus --no-desktop --new-window 
+
+# i3-gaps 
+# install to use the below functionality 
+# https://github.com/Airblader/i3wm
+
+gaps inner 8
+gaps outer 8
