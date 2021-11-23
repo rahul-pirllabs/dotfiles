@@ -9,7 +9,7 @@ use stow to create a link to these files
     - [ ] learn how to write some basic lua to customize vim experience 
 - [ ] i3
     - [ ] add volume controls 
-    - [ ] check if nautilus works 
+    - [x] check if nautilus works 
     - [ ] add shutdown, restart and suspend options 
     - [ ] i3 gaps for a more pop like experience 
     - [ ] desktop wallpaper 
