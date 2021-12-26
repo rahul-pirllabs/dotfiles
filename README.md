@@ -8,7 +8,12 @@ use stow to create a link to these files
     - [ ] look at what plenary is 
     - [ ] learn how to write some basic lua to customize vim experience 
     - [X] lsp into a seperate lua file 
-    - [ ] add multiple language support into vim
+    - [X] add multiple language support into vim
+    - [ ] find out how to make the rust analyzer works and if i need it get it
+            working for me 
+    - [ ] try out fzf for vim and see if i can use it better then telescope 
+    - [ ] find out what the nvim lsp short cuts do.
+
 - [ ] i3
     - [ ] add volume controls 
     - [x] check if nautilus works 

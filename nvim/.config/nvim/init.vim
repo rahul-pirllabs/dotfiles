@@ -41,6 +41,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 
+"plug for rust
+Plug 'rust-lang/rust.vim'
+
 "status line
 "Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 
