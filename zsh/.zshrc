@@ -117,6 +117,7 @@ export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 export EDITOR=nvim;
 
 # alias
-alias vim="nvim"
+alias vim="~/nvim.appimage"
+alias nvim="~/nvim.appimage"
 alias cl="clear"
 alias py="python3"
