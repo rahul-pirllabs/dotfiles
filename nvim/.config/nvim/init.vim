@@ -1,74 +1,84 @@
+set path+=**
+
+" Nice menu when typing `:find *.py`
+set wildmode=longest,list,full
+set wildmenu
+" Ignore files
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=**/coverage/*
+set wildignore+=**/node_modules/*
+set wildignore+=**/android/*
+set wildignore+=**/ios/*
+set wildignore+=**/.git/*
+
 call plug#begin('~/.vim/plugged')
 
-" Theme's
+" gruvboxxxx babyyy
 Plug 'gruvbox-community/gruvbox'
+Plug 'luisiacc/gruvbox-baby'
 
-"lsp
+" xcode-theme
+" I think this is easier to read
+Plug 'nickaroot/vim-xcode-dark-theme'
+
+" Plebvim lsp Plugins
+
+" Basic LSP stuff
 Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
-
-"auto-complete
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+" Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
-" vsip need to know what this is 
-" For vsnip user.
-Plug 'hrsh7th/cmp-vsnip'
-Plug 'hrsh7th/vim-vsnip'
+" For luasnip users.
+Plug 'saadparwaiz1/cmp_luasnip'
 
-" telescope requirements...
+" TabNine (someathing like AI assisted autocomplete)
+" Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
+
+" vsCode like pictograms for neovim lsp completion items
+" Plug 'onsails/lspkind-nvim'
+
+" I think this is related to RUST and i will not need it 
+" Plug 'nvim-lua/lsp_extensions.nvim'
+
+" Additioal plugin for nvim-lsp for additional functionality
+" Plug 'glepnir/lspsaga.nvim'
+" Plug 'simrat39/symbols-outline.nvim'
+
+" Telescope 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzy-native.nvim'
+" This is a much better sorting algo
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
-Plug 'vim-conf-live/vimconflive2021-colorscheme'
-Plug 'flazz/vim-colorschemes'
-Plug 'chriskempson/base16-vim'
+" Git worktree
+Plug 'ThePrimeagen/git-worktree.nvim'
 
-" format prettier
-Plug 'sbdchd/neoformat'
-
-" Neovim Tree sitter
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-treesitter/playground'
-
+" UndoTreee
 Plug 'mbbill/undotree'
 
-"git 
+" Git 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'junegunn/gv.vim'
 
-"plug for rust
-Plug 'rust-lang/rust.vim'
-
-"status line
-"Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-
-" If you want to display icons, then use one of these plugins:
-"Plug 'kyazdani42/nvim-web-devicons' " lua
-"Plug 'ryanoasis/vim-devicons' " vimscript
-
-Plug 'vim-airline/vim-airline'
+" Pretty
+Plug 'sbdchd/neoformat'
 
 call plug#end()
 
-colorscheme gruvbox
-highlight Normal guibg=none
-highlight ColorColumn ctermbg=0 guibg=grey
-
 let mapleader = " "
 
-lua require("lsp")
+lua require("thepakru")
 
-lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }}
+" Remaps and Shortcuts
 
-nnoremap <leader>vwh :h <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>bs /<C-R>=escape(expand("<cWORD>"), "/")<CR><CR>
+" Reload the source file `leader+ENTER`
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
-nnoremap <leader>gll :let g:_search_term = expand("%")<CR><bar>:Gclog -- %<CR>:call search(g:_search_term)<CR>
-nnoremap <leader>gln :cnext<CR>:call search(_search_term)<CR>
-nnoremap <leader>glp :cprev<CR>:call search(_search_term)<CR>
+
+" Move back to the file tree
+nnoremap <leader>pv :Ex<CR>
 
