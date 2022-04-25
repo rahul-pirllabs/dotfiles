@@ -9,8 +9,9 @@ vim.api.nvim_set_keymap('n', '<leader>pa', ':Telescope find_files cwd=~/<CR>', o
 
 -- File Browser
 vim.api.nvim_set_keymap('n', '<leader>pbc', ':Telescope file_browser<CR>', opts)
-vim.api.nvim_set_keymap('n', '<leader>pba', ':Telescope file_browser cwd=~/<CR>', opts)
-vim.api.nvim_set_keymap('n', '<leader>pbd', ':Telescope file_browser cwd=~/dotfiles<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>pba', ':Telescope file_browser hidden=true cwd=~/<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>pbd', ':Telescope file_browser hidden=true cwd=~/dotfiles<CR>', opts)
+vim.api.nvim_set_keymap("n","<space>fb","<cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>",{noremap = true})
 
 
 -- Git files
@@ -70,6 +71,7 @@ require('telescope').setup{
 -- the fzf sorter -> better search results
 require('telescope').load_extension('fzf')
 require("telescope").load_extension("git_worktree")
+require("telescope").load_extension("file_browser")
 
 -- helpfull shortcuts from telescope
 -- <ctrl + v> to slipt the result to a new screen

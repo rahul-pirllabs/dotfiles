@@ -54,6 +54,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 " This is a much better sorting algo
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+" File browser
+Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 " Git worktree
 Plug 'ThePrimeagen/git-worktree.nvim'
@@ -67,6 +69,17 @@ Plug 'tpope/vim-rhubarb'
 
 " Pretty
 Plug 'sbdchd/neoformat'
+
+" I can't spell 
+" To use type `:GrammarousCheck`
+Plug 'rhysd/vim-grammarous'
+
+" Markdown preview
+" to use just type `:Glow`
+Plug 'ellisonleao/glow.nvim'
+
+" Comment 
+Plug 'numToStr/Comment.nvim'
 
 call plug#end()
 
