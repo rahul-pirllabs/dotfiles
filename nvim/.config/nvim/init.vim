@@ -57,6 +57,9 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " File browser
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 
+" Harpoonnn MAN
+Plug 'ThePrimeagen/harpoon'
+
 " Git worktree
 Plug 'ThePrimeagen/git-worktree.nvim'
 
