@@ -66,12 +66,13 @@ local on_attach = function(client, bufnr)
 
   -- This does formatting of the buffer
   -- vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting_seq_sync()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.format{async=true}<CR>', opts)
 
 end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright'}
+local servers = { 'pylsp'}
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     capabilities = capabilities,
@@ -89,6 +90,7 @@ vim.opt.completeopt={"menu", "menuone", "noselect"}
 
 -- Setup nvim-cmp.
 local cmp = require'cmp'
+-- local cmp = require('cmp')
 
 cmp.setup({
 snippet = {
@@ -100,8 +102,8 @@ snippet = {
   end,
 },
 window = {
-  -- completion = cmp.config.window.bordered(),
-  -- documentation = cmp.config.window.bordered(),
+  completion = cmp.config.window.bordered(),
+  documentation = cmp.config.window.bordered(),
 },
 
 -- these mappings do not seem to be working on mac OS will need to chanege them
@@ -119,17 +121,14 @@ mapping = {
 },
 experimental = {
     -- this menu looks better
-   native_menu = flase,
+  native_menu = flase,
 
    -- i think this is more similar to vscode
   ghost_test = true,
 },
 sources = cmp.config.sources({
   { name = 'nvim_lsp' },
-  -- { name = 'vsnip' }, -- For vsnip users.
   { name = 'luasnip' }, -- For luasnip users.
-  -- { name = 'ultisnips' }, -- For ultisnips users.
-  -- { name = 'snippy' }, -- For snippy users.
 }, {
   { name = 'buffer' },
 })

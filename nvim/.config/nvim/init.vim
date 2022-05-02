@@ -33,7 +33,8 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/nvim-cmp'
 
 " For luasnip users.
-Plug 'saadparwaiz1/cmp_luasnip'
+" Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'L3MON4D3/LuaSnip'
 
 " TabNine (someathing like AI assisted autocomplete)
 " Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
