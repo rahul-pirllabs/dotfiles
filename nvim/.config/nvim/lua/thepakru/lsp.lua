@@ -3,6 +3,7 @@
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
@@ -72,17 +73,15 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pylsp'}
+-- local servers = { 'pylsp', 'pyright'}
+local servers = {'pyright'}
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     capabilities = capabilities,
     on_attach = on_attach,
-    flags = {
-      -- This will be the default in neovim 0.7+
-      debounce_text_changes = 150,
-    }
   }
 end
+
 
 -- Nvim cmp Setup
 
@@ -121,10 +120,10 @@ mapping = {
 },
 experimental = {
     -- this menu looks better
-  native_menu = flase,
+  -- native_menu = flase,
 
    -- i think this is more similar to vscode
-  ghost_test = true,
+  -- ghost_test = true,
 },
 sources = cmp.config.sources({
   { name = 'nvim_lsp' },

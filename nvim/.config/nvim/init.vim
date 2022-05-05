@@ -32,6 +32,9 @@ Plug 'hrsh7th/cmp-path'
 " Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
+" lsp installer
+Plug 'williamboman/nvim-lsp-installer'
+
 " For luasnip users.
 " Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
@@ -57,6 +60,9 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " File browser
 Plug 'nvim-telescope/telescope-file-browser.nvim'
+
+" TreeShitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Harpoonnn MAN
 Plug 'ThePrimeagen/harpoon'

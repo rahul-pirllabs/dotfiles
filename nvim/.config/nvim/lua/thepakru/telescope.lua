@@ -17,6 +17,7 @@ vim.api.nvim_set_keymap("n","<space>fb","<cmd>lua require 'telescope'.extensions
 -- Git files
 vim.api.nvim_set_keymap('n', '<leader>pgf', ':Telescope git_files<CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>pgs', ':Telescope git_status<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>pgc', ':Telescope git_commits<CR>', opts)
 
 -- grep 
 vim.api.nvim_set_keymap('n', '<leader>ps', ':Telescope live_grep<CR>', opts)
