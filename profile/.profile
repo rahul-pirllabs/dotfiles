@@ -31,6 +31,9 @@ setxkbmap -option caps:swapescape
 # Wallpaper
 feh --randomize --bg-fill ~/Pictures/wallpaper/Active-wallpapers/*
 
+# Temp Wallpaper
+# feh --randomize --bg-fill ~/Pictures/wallpaper/Temp-Active-wallpapers/*
+
 # Wallpaper change every 5 mins
 # watch -n 300 feh -randomize -bg-fill ~/Pictures/wallpaper/Active-wallpapers/*
 # watch -n 300 feh --randomize --bg-fill ~/Pictures/wallpaper/Active-wallpapers/*
