@@ -37,3 +37,6 @@ feh --randomize --bg-fill ~/Pictures/wallpaper/Active-wallpapers/*
 # Wallpaper change every 5 mins
 # watch -n 300 feh -randomize -bg-fill ~/Pictures/wallpaper/Active-wallpapers/*
 # watch -n 300 feh --randomize --bg-fill ~/Pictures/wallpaper/Active-wallpapers/*
+
+# Change resolution for Laptop screen
+xrandr -s 1920x1080
