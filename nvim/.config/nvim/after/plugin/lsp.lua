@@ -50,6 +50,7 @@ require('lspconfig')['tsserver'].setup{
 
 -- nvim-cmp
 vim.opt.completeopt={"menu", "menuone", "noselect"}
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 
 local cmp = require'cmp'
 
