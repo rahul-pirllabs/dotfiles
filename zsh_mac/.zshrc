@@ -107,3 +107,6 @@ export EDITOR=nvim;
 alias vim="nvim"
 alias cl="clear"
 alias py="python3"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
