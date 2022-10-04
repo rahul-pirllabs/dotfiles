@@ -1,4 +1,7 @@
 local neogit = require('neogit')
 
-neogit.setup {}
+neogit.setup {
+      popup = {
+    kind = "split",
+  },}
 

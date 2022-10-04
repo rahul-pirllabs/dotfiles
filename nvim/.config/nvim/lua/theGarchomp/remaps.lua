@@ -40,6 +40,9 @@ end)
 -- Telscope extensions
 nnoremap("<leader>fb", ":Telescope file_browser<CR>")
 
+-- neogit 
+nnoremap("<leader>gs", ":Neogit kind=vsplit<CR>")
+nnoremap("<leader>ga", "<cmd>!git fetch --all<CR>")
 
 
 
