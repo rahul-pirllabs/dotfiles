@@ -25,10 +25,8 @@ return require('packer').startup(function(use)
   use("saadparwaiz1/cmp_luasnip")
 
   --auto pairs
-  use {
-      "windwp/nvim-autopairs",
-      config = function() require("nvim-autopairs").setup {} end
-  }
+  use("windwp/nvim-autopairs")
+
 
   --treesitter
   use {
