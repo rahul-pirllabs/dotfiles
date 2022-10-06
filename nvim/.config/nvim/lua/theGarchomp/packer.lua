@@ -24,32 +24,35 @@ return require('packer').startup(function(use)
   use("L3MON4D3/LuaSnip")
   use("saadparwaiz1/cmp_luasnip")
 
-  --auto pairs
+  -- auto pairs
   use("windwp/nvim-autopairs")
 
 
-  --treesitter
+  -- treesitter
   use {
       'nvim-treesitter/nvim-treesitter',
       run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
 
-  --undotree
+  -- undotree
   use("mbbill/undotree")
 
-  --autoformat
+  -- autoformat
   use "lukas-reineke/lsp-format.nvim"
 
-  --Telescope
+  -- Telescope
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
       -- or                            , branch = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} }
   }
+  -- Telescope extension
   use { "nvim-telescope/telescope-file-browser.nvim" }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 
-
-
-
+ -- status line
+ use {
+     'nvim-lualine/lualine.nvim',
+     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+ }
 end)
