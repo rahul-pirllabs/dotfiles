@@ -3,6 +3,11 @@
 ## tmux basics
 `tmux a`: attach to previous session (alais for `tmux attach`)
 
+## Copy mode
+<prefix> [: enter copy mode
+<prefix> ]: paste in copy mode
+q: exit copy mode
+
 ## Sessions 
 <preifx> d: disconnect you from a session 
 `tmux list-sessions`: these will show all your tmux sessions (`tmux ls`: this does the same thing)

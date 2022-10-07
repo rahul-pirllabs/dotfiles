@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
 
   -- auto pairs
   use("windwp/nvim-autopairs")
+  -- auto tags
+  use("windwp/nvim-ts-autotag")
 
 
   -- treesitter
