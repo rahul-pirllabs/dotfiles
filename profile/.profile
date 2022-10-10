@@ -29,7 +29,7 @@ fi
 setxkbmap -option caps:swapescape
 
 # Wallpaper
-feh --randomize --bg-fill ~/Pictures/wallpaper/Active-wallpapers/*
+#feh --randomize --bg-fill ~/Pictures/wallpaper/Active-wallpapers/*
 
 # Temp Wallpaper
 # feh --randomize --bg-fill ~/Pictures/wallpaper/Temp-Active-wallpapers/*
