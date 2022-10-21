@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
   use("gruvbox-community/gruvbox")
   use("folke/tokyonight.nvim")
   use ({ 'projekt0n/github-nvim-theme' })
+  --use("morhetz/gruvbox")
 
   --Nvim native lsp
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
@@ -60,5 +61,8 @@ return require('packer').startup(function(use)
 
  -- Harpoon!!
  use("ThePrimeagen/harpoon")
+
+ -- Grammerous
+ use("rhysd/vim-grammarous")
  
 end)
