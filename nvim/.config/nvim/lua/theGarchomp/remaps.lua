@@ -34,6 +34,9 @@ end)
 nnoremap("<leader>fgc", function()
     require('telescope.builtin').git_commits()
 end)
+nnoremap("<leader>fy", function()
+    require('telescope.builtin').lsp_document_symbols()
+end)
 
 -- Telscope extensions
 nnoremap("<leader>fb", ":Telescope file_browser<CR>")
@@ -43,7 +46,7 @@ nnoremap("<leader>gs", ":Neogit kind=vsplit<CR>")
 nnoremap("<leader>ga", "<cmd>!git fetch --all<CR>")
 
 -- Harpoon remaps!!
-nnoremap("<leader>x", function() require("harpoon.mark").add_file() end, silent)
+nnoremap("<leader>n", function() require("harpoon.mark").add_file() end, silent)
 nnoremap("<C-e>", function() require("harpoon.ui").toggle_quick_menu() end, silent)
 
 nnoremap("<C-h>", function() require("harpoon.ui").nav_file(1) end, silent)

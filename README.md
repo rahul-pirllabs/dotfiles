@@ -2,10 +2,13 @@
 
 use stow to create a link to these files
 
-### TODO:
+## Notes
 
-- [ ] understand all the vim LSP shortcuts that i have included 
-    - [ ] rename
-    - [ ] get definition 
-    - [ ] symbols 
-    - [ ] get definitions 
+### spell check 
+"]s": move forward through spelling mistakes
+"[s": move backward through spelling mistakes
+"z=": brings up menu for correcting spelling mistakes
+
+## TODO:
+
+

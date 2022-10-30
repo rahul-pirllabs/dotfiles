@@ -1,6 +1,8 @@
 -- vim.g.garchomp_colorscheme = "github_light_default"
 -- vim.g.theprimeagen_colorscheme = "tokyonight"
 vim.g.garchomp_colorscheme = "gruvbox"
+vim.cmd("colorscheme " .. vim.g.garchomp_colorscheme)
+
 
 
 function ColorMyPencils()

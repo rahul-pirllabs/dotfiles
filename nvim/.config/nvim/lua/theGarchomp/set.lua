@@ -31,7 +31,7 @@ vim.opt.isfname:append("@-@")
 -- Give more space for displaying messages.
 vim.opt.cmdheight = 1
 
--- Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+-- Having longer update time (default is 4000 ms = 4 s) leads to noticeable
 -- delays and poor user experience.
 vim.opt.updatetime = 50
 
@@ -40,7 +40,12 @@ vim.opt.shortmess:append("c")
 
 vim.opt.colorcolumn = "80"
 
+-- spell check
+vim.opt.spell = true
+vim.opt.spelllang = { 'en_us' }
+
+-- leader 
 vim.g.mapleader = " "
 
-vim.spell.spelllans = "en_us"
+
 
