@@ -7,7 +7,15 @@ return require('packer').startup(function(use)
     use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
     --Theme
-    use { "catppuccin/nvim", as = "catppuccin" }
+    use {
+        "catppuccin/nvim",
+        as = "catppuccin",
+        config = function()
+            require("catppuccin").setup {
+                flavour = "mocha" -- mocha, macchiato, frappe, latte
+            }
+        end
+    }
     use("gruvbox-community/gruvbox")
     use("folke/tokyonight.nvim")
     use ({ 'projekt0n/github-nvim-theme' })

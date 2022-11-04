@@ -1,10 +1,10 @@
 -- vim.g.garchomp_colorscheme = "github_light_default"
 -- vim.g.theprimeagen_colorscheme = "tokyonight"
-vim.g.garchomp_colorscheme = "gruvbox"
+-- vim.g.garchomp_colorscheme = "gruvbox"
+vim.g.garchomp_colorscheme = "catppuccin"
 vim.cmd("colorscheme " .. vim.g.garchomp_colorscheme)
 
-
-
+--[[
 function ColorMyPencils()
     vim.g.gruvbox_contrast_dark = "hard" 
     vim.g.tokyonight_transparent_sidebar = true
@@ -45,7 +45,7 @@ function ColorMyPencils()
 
 end
 ColorMyPencils()
-
+]]--
 
 
 
