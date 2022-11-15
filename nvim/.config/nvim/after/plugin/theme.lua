@@ -1,6 +1,8 @@
 -- vim.g.garchomp_colorscheme = "github_light_default"
 -- vim.g.theprimeagen_colorscheme = "tokyonight"
 -- vim.g.garchomp_colorscheme = "gruvbox"
+vim.g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
+require("catppuccin").setup()
 vim.g.garchomp_colorscheme = "catppuccin"
 vim.cmd("colorscheme " .. vim.g.garchomp_colorscheme)
 
