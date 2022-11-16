@@ -48,6 +48,12 @@ require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
+require('lspconfig')['clangd'].setup{
+    cmd = {"clangd-12"},
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
 
 -- nvim-cmp
 vim.opt.completeopt={"menu", "menuone", "noselect"}
