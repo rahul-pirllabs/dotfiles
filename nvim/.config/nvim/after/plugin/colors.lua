@@ -9,5 +9,4 @@ function ColorMyPencils(color)
 
 end
 
---ColorMyPencils("gruvbox")
-ColorMyPencils("borlandp")
+ColorMyPencils("gruvbox")

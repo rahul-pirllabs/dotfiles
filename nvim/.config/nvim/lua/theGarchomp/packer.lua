@@ -22,7 +22,6 @@ return require('packer').startup(function(use)
     })
 
     use("gruvbox-community/gruvbox")
-    use("caglartoklu/borlandp.vim")
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
