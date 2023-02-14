@@ -21,6 +21,8 @@ return require('packer').startup(function(use)
 
     use("gruvbox-community/gruvbox")
     use({ "catppuccin/nvim", as = "catppuccin" })
+    use("vim-scripts/Tango-colour-scheme")
+    use("noahfrederick/vim-noctu")
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')

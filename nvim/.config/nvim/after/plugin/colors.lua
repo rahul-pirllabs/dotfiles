@@ -44,7 +44,7 @@ require("catppuccin").setup({
 function ColorMyPencils(color)
     color = color or "rose-pine"
     vim.cmd.colorscheme(color)
-    vim.g.gruvbox_contrast_dark = "hard"
+    vim.g.gruvbox_contrast_dark = ""
     vim.g.gruvbox_invert_selection = '0'
 
     --vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -52,5 +52,6 @@ function ColorMyPencils(color)
 
 end
 
---ColorMyPencils("gruvbox")
-ColorMyPencils("catppuccin" )
+ColorMyPencils("gruvbox")
+--ColorMyPencils("tango")
+--ColorMyPencils("catppuccin" )
