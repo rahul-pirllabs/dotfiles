@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/rahul/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/rahul/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/rahul/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -228,6 +233,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/rahul/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-noctu"] = {
+    loaded = true,
+    path = "/home/rahul/.local/share/nvim/site/pack/packer/start/vim-noctu",
+    url = "https://github.com/noahfrederick/vim-noctu"
   }
 }
 
