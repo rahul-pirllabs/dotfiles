@@ -87,4 +87,7 @@ return require('packer').startup(function(use)
             }
         end
     }
-end)
+
+    -- Venn Diagram
+    use("jbyuki/venn.nvim")
+end) 
