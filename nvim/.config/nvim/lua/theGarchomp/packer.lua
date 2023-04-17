@@ -88,9 +88,6 @@ return require('packer').startup(function(use)
         end
     }
 
-    -- Venn Diagram
-    use("jbyuki/venn.nvim")
-
     -- Zen Mode
     -- Lua
     use("folke/zen-mode.nvim")

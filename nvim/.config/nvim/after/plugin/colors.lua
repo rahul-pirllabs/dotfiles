@@ -53,7 +53,7 @@ function ColorMyPencils(color)
 
 end
 
--- ColorMyPencils()
-ColorMyPencils("gruvbox")
+ColorMyPencils()
+--ColorMyPencils("gruvbox")
 -- ColorMyPencils("tango")
 -- ColorMyPencils("catppuccin" )
