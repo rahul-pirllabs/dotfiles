@@ -33,3 +33,6 @@ vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
 vim.opt.clipboard = 'unnamedplus'
 
+-- Python3 support
+vim.g.python3_host_prog = '/usr/local/bin/python3'
+

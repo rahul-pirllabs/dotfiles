@@ -82,7 +82,7 @@ return require('packer').startup(function(use)
         config = function()
             require("todo-comments").setup {
                 -- your configuration comes here
-                -- or leave it empty to use the default settings
+                -- or leave it empty to use the default setting
                 -- refer to the configuration section below
             }
         end
@@ -91,4 +91,20 @@ return require('packer').startup(function(use)
     -- Zen Mode
     -- Lua
     use("folke/zen-mode.nvim")
+
+    -- Copilot
+    use ("github/copilot.vim")
+
+    -- Jupyter notebooks for nvim
+    use("luk400/vim-jukit")
+
+    -- neodev
+    use("folke/neodev.nvim")
+
+    -- DAP
+    use("mfussenegger/nvim-dap")
+    use("rcarriga/nvim-dap-ui")
+    use("theHamsta/nvim-dap-virtual-text")
+    -- python DAP
+    use("mfussenegger/nvim-dap-python")
 end)
