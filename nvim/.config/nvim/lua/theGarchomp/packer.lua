@@ -96,7 +96,7 @@ return require('packer').startup(function(use)
     use ("github/copilot.vim")
 
     -- Jupyter notebooks for nvim
-    use("luk400/vim-jukit")
+    -- use("luk400/vim-jukit")
 
     -- neodev
     use("folke/neodev.nvim")
@@ -105,6 +105,10 @@ return require('packer').startup(function(use)
     use("mfussenegger/nvim-dap")
     use("rcarriga/nvim-dap-ui")
     use("theHamsta/nvim-dap-virtual-text")
+    
     -- python DAP
     use("mfussenegger/nvim-dap-python")
+
+    -- csv 
+    --use("chrisbra/csv.vim")
 end)
