@@ -1,1 +1,1 @@
-require("theGarchomp")
+require("garchomp")
