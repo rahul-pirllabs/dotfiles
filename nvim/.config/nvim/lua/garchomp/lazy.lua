@@ -12,11 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+    -- Telescope
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.5',
         -- or                              , branch = '0.1.x',
-        dependencies = { 'nvim-lua/plenary.nvim' }
+        dependencies = { 'nvim-lua/plenary.nvim' },
     },
     -- Themes
     {
@@ -30,6 +31,13 @@ local plugins = {
         name = "gruvbox",
         lazy = false,
         priority = 1000,
+    },
+    {
+        "craftzdog/solarized-osaka.nvim",
+        name = 'solarized-osaka',
+        lazy = false,
+        priority = 1000,
+        opts = {},
     },
     -- Treesitter
     {
@@ -72,6 +80,8 @@ local plugins = {
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
     { 'L3MON4D3/LuaSnip' },
+    -- Copilot
+    { "github/copilot.vim" }
 }
 
 -- Lazy plugin manager
