@@ -3,6 +3,8 @@
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
   "copilot.vim": { "branch": "release", "commit": "5b19fb001d7f31c4c7c5556d7a97b243bd29f45f" },
   "gruvbox": { "branch": "main", "commit": "4176b0b720db0c90ab4030e5c1b4893faf41fd51" },
+  "guard-collection": { "branch": "main", "commit": "13e00d19f418d68977c6bc803f0d23d09dce580d" },
+  "guard.nvim": { "branch": "main", "commit": "394317c25a6b0f0e064aebcfcf902e46fb0a04ba" },
   "harpoon": { "branch": "harpoon2", "commit": "6afc142443f8135329f8dd09b77e229f65001c0c" },
   "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
   "lsp-zero.nvim": { "branch": "v3.x", "commit": "be1508669cf20deaeb1ee94eca104d2b26fd7608" },

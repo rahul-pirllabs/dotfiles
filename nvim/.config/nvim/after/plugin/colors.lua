@@ -127,5 +127,5 @@ function ColorMyPencils(color)
     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
-local color = 'solarized-osaka'
+-- local color = 'solarized-osaka'
 ColorMyPencils(color)

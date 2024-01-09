@@ -80,6 +80,14 @@ local plugins = {
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
     { 'L3MON4D3/LuaSnip' },
+    -- Linter
+    {
+        "nvimdev/guard.nvim",
+        -- Builtin configuration, optional
+        dependencies = {
+            "nvimdev/guard-collection",
+        },
+    },
     -- Copilot
     { "github/copilot.vim" }
 }
