@@ -33,11 +33,9 @@ local plugins = {
         priority = 1000,
     },
     {
-        "craftzdog/solarized-osaka.nvim",
-        name = 'solarized-osaka',
-        lazy = false,
-        priority = 1000,
-        opts = {},
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000
     },
     -- Treesitter
     {
