@@ -19,6 +19,7 @@ local plugins = {
         -- or                              , branch = '0.1.x',
         dependencies = { 'nvim-lua/plenary.nvim' },
     },
+    { 'kevinhwang91/nvim-bqf' },
     -- Themes
     {
         "rose-pine/neovim",
@@ -36,6 +37,16 @@ local plugins = {
         "catppuccin/nvim",
         name = "catppuccin",
         priority = 1000
+    },
+    {
+        "craftzdog/solarized-osaka.nvim",
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        "Mofiqul/vscode.nvim",
+        lazy = false,
+        priority = 1000,
     },
     -- Treesitter
     {
@@ -58,6 +69,8 @@ local plugins = {
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
+    -- Worktree
+    { "ThePrimeagen/git-worktree.nvim" },
     -- Undotree
     {
         "mbbill/undotree"
@@ -86,8 +99,15 @@ local plugins = {
             "nvimdev/guard-collection",
         },
     },
+    -- Auto brackets
+    -- { 'jiangmiao/auto-pairs' },
     -- Copilot
-    { "github/copilot.vim" }
+    { "github/copilot.vim" },
+    -- TODO
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+    }
 }
 
 -- Lazy plugin manager
