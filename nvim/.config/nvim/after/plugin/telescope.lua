@@ -26,10 +26,10 @@ require('telescope').setup{
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
-    "git-worktree"
   }
 }
 
+require("telescope").load_extension("git_worktree")
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})
@@ -42,3 +42,4 @@ vim.keymap.set('n', '<leader>pd', builtin.diagnostics, {})
 vim.keymap.set('n', '<leader>pgd', builtin.lsp_definitions, {})
 vim.keymap.set('n', '<leader>prr', builtin.lsp_references, {})
 vim.keymap.set('n', '<C-s>', builtin.spell_suggest, {})
+vim.keymap.set('n', '<C-w>', function() require('telescope').extensions.git_worktree.git_worktrees() end)
