@@ -22,32 +22,12 @@ local plugins = {
     { 'kevinhwang91/nvim-bqf' },
     -- Themes
     {
-        "rose-pine/neovim",
-        name = 'rose-pine',
-        lazy = false,
-        priority = 1000,
-    },
-    {
         "ellisonleao/gruvbox.nvim",
         name = "gruvbox",
         lazy = false,
         priority = 1000,
     },
-    {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 1000
-    },
-    {
-        "craftzdog/solarized-osaka.nvim",
-        lazy = false,
-        priority = 1000,
-    },
-    {
-        "Mofiqul/vscode.nvim",
-        lazy = false,
-        priority = 1000,
-    },
+    { "rose-pine/neovim",     name = "rose-pine", lazy = false, priority = 1000 },
     -- Treesitter
     {
         "nvim-treesitter/nvim-treesitter",
@@ -107,6 +87,11 @@ local plugins = {
     {
         "folke/todo-comments.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
+    },
+    -- Lualine
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
     }
 }
 
