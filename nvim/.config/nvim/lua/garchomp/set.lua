@@ -10,11 +10,11 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/.undodir"
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
@@ -27,11 +27,10 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
-
 vim.opt.colorcolumn = "80"
 
-vim.g.mapleader = " "
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.cursorline = true
 
--- Python3 support
-vim.g.python3_host_prog = '/usr/local/bin/python3'
+vim.opt.spelllang = "en_us"
+vim.opt.spell = true
+
