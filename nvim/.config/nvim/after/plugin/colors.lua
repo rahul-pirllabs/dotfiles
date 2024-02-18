@@ -30,7 +30,7 @@ function ColorMyPencils(color)
 
     if color == "rose-pine" then
         require("rose-pine").setup({
-            variant = "auto", -- auto, main, moon, or dawn
+            variant = "auto",      -- auto, main, moon, or dawn
             dark_variant = "main", -- main, moon, or dawn
             dim_inactive_windows = false,
             extend_background_behind_borders = true,
@@ -38,7 +38,7 @@ function ColorMyPencils(color)
             enable = {
                 terminal = true,
                 legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
-                migrations = true, -- Handle deprecated options automatically
+                migrations = true,        -- Handle deprecated options automatically
             },
 
             styles = {
@@ -97,10 +97,13 @@ function ColorMyPencils(color)
         })
     end
     vim.cmd.colorscheme(color)
-    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
-local color = 'gruvbox'
+-- local color = 'gruvbox'
+local color = 'solarized'
+vim.opt.background="light"
+-- local color = 'Atelier_CaveLight'
 -- local color = 'rose-pine'
 ColorMyPencils(color)

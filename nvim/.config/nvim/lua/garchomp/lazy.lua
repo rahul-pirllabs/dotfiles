@@ -28,6 +28,18 @@ local plugins = {
         priority = 1000,
     },
     { "rose-pine/neovim",     name = "rose-pine", lazy = false, priority = 1000 },
+    {
+        "atelierbram/vim-colors_atelier-schemes",
+        lazy = false,
+        priority = 1000,
+
+    },
+    {
+        "altercation/vim-colors-solarized",
+        lazy = false,
+        priority = 1000,
+
+    },
     -- Treesitter
     {
         "nvim-treesitter/nvim-treesitter",
@@ -80,7 +92,7 @@ local plugins = {
         },
     },
     -- Auto brackets
-    -- { 'jiangmiao/auto-pairs' },
+    { 'jiangmiao/auto-pairs' },
     -- Copilot
     { "github/copilot.vim" },
     -- TODO
@@ -92,7 +104,18 @@ local plugins = {
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
-    }
+    },
+    -- Rust
+    -- rust formatting
+    {
+        "rust-lang/rust.vim"
+    },
+    -- {
+    --     'mrcjkb/rustaceanvim',
+    --     version = '^4', -- Recommended
+    --     ft = { 'rust' },
+    -- },
+
 }
 
 -- Lazy plugin manager

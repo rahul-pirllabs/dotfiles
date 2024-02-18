@@ -36,7 +36,7 @@ lsp_zero.format_on_save({
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { 'tsserver', 'rust_analyzer', 'pyright' },
+    ensure_installed = { 'tsserver', 'pyright' },
     handlers = {
         lsp_zero.default_setup,
         lua_ls = function()
@@ -65,3 +65,8 @@ cmp.setup({
         ['<C-Space>'] = cmp.mapping.complete(),
     }),
 })
+
+vim.diagnostic.config({
+    virtual_text = true
+})
+-- vim.lsp.inlay_hint.enable(0, true)
