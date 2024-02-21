@@ -40,6 +40,11 @@ local plugins = {
         priority = 1000,
 
     },
+    {
+        "Shatur/neovim-ayu",
+        lazy = false,
+        priority = 1000,
+    },
     -- Treesitter
     {
         "nvim-treesitter/nvim-treesitter",
