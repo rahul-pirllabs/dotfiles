@@ -29,21 +29,11 @@ local plugins = {
     },
     { "rose-pine/neovim",     name = "rose-pine", lazy = false, priority = 1000 },
     {
-        "atelierbram/vim-colors_atelier-schemes",
+        "alljokecake/naysayer-theme.nvim",
         lazy = false,
         priority = 1000,
+        name = "naysayer"
 
-    },
-    {
-        "altercation/vim-colors-solarized",
-        lazy = false,
-        priority = 1000,
-
-    },
-    {
-        "Shatur/neovim-ayu",
-        lazy = false,
-        priority = 1000,
     },
     -- Treesitter
     {

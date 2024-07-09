@@ -96,13 +96,24 @@ function ColorMyPencils(color)
             end,
         })
     end
+
+    if color == "naysayer" then
+        require('naysayer').setup({
+            variant = 'main',
+            dark_variant = 'main',
+            bold_vert_split = false,
+            dim_nc_background = false,
+            disable_background = true,
+            disable_float_background = true,
+            disable_italics = true,
+        })
+    end
     vim.cmd.colorscheme(color)
     -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 -- local color = 'gruvbox'
--- local color = 'Atelier_CaveLight'
-local color = 'rose-pine'
-local color = 'ayu'
+-- local color = 'rose-pine'
+local color = "naysayer"
 ColorMyPencils(color)
