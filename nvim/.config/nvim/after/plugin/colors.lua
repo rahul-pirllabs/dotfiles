@@ -113,7 +113,7 @@ function ColorMyPencils(color)
     -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
--- local color = 'gruvbox'
+local color = 'gruvbox'
 -- local color = 'rose-pine'
-local color = "naysayer"
+-- local color = "naysayer"
 ColorMyPencils(color)
