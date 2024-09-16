@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z ssh-agent)
+plugins=(git z ssh-agent fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,6 +105,9 @@ alias ll='la'
 alias bat='batcat'
 alias ve='source .venv/bin/activate'
 alias tox='python -m tox'
+alias copy='xclip -sel clip'
+alias nopen='nautilus'
+alias vim='nvim'
 
 # GO config
 export GOROOT=/usr/local/go
@@ -128,7 +131,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # TRIAGE PARTY
-export GITHUB_TOKEN="$(cat $HOME/.github_triage_party_token)"
+# export GITHUB_TOKEN="$(cat $HOME/.github_triage_party_token)"
 
 # RUST CONFIG
 export PATH="$HOME/.cargo/bin:$PATH"
