@@ -1,1 +1,1 @@
-require("garchomp")
+require("config.lazy")
